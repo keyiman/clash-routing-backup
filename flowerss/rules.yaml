@@ -1,5 +1,5 @@
 prepend:
-- DOMAIN,agi.tongji.edu.cn,DIRECT
+- DOMAIN-SUFFIX,tongji.edu.cn,DIRECT
 - IP-CIDR,10.67.0.251/32,DIRECT,no-resolve
 - IP-CIDR,10.67.0.252/32,DIRECT,no-resolve
 - DOMAIN-SUFFIX,anthropic.com,🇯🇵 日本高级 IEPL 专线 1
