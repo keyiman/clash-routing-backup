@@ -1,0 +1,10 @@
+# Profile Enhancement Merge Template for Clash Verge
+
+
+find-process-mode: always
+
+dns:
+  nameserver-policy:
+    'agi.tongji.edu.cn':
+    - udp://202.120.190.208:53
+    - udp://202.120.190.108:53

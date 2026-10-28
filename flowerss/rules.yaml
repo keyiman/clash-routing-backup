@@ -1,0 +1,42 @@
+prepend:
+- DOMAIN,agi.tongji.edu.cn,DIRECT
+- IP-CIDR,10.67.0.251/32,DIRECT,no-resolve
+- IP-CIDR,10.67.0.252/32,DIRECT,no-resolve
+- DOMAIN-SUFFIX,anthropic.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,claude.ai,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,claude.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,clau.de,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,claudemcpclient.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,claudeusercontent.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,claude.site,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,anthropic.auth0.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,anthropic-com.ghost.io,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,anthropic.com.cdn.cloudflare.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,servd-anthropic-website.b-cdn.net,🇯🇵 日本高级 IEPL 专线 1
+- PROCESS-NAME,claude.exe,🇯🇵 日本高级 IEPL 专线 1
+- PROCESS-PATH-REGEX,(?i).*(AnthropicClaude|[\\/]Anthropic[\\/]|[\\/]Claude[\\/]|[\\/]claude-code[\\/]).*,🇯🇵 日本高级 IEPL 专线 1
+- PROCESS-NAME,codex.exe,🇯🇵 日本高级 IEPL 专线 1
+- PROCESS-NAME,ChatGPT.exe,🇯🇵 日本高级 IEPL 专线 1
+- PROCESS-PATH-REGEX,(?i).*(OpenAI[\\/]Codex[\\/]|WindowsApps[\\/]OpenAI[.]Codex_|codex-runtimes[\\/]|[.]codex[\\/]plugins[\\/]).*,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openai.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,chatgpt.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,oaistatic.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,oaiusercontent.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,ai.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,chatgpt.livekit.cloud,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,host.livekit.cloud,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,turn.livekit.cloud,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openai-api.arkoselabs.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,client-api.arkoselabs.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,auth0.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openaicom.imgix.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,openaicomproductionae4b.blob.core.windows.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,api.statsig.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,events.statsigapi.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,featuregates.org,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-KEYWORD,openai,🇯🇵 日本高级 IEPL 专线 1
+append: []
+delete: []

@@ -1,0 +1,8 @@
+# Keep credentials and generated runtime configs out of this backup.
+.env*
+*credentials*
+profiles.yaml
+config.yaml
+clash-verge.yaml
+*.db
+*.log
