@@ -34,3 +34,7 @@
 ## 校园 DNS 分流更新
 
 覆盖同济主域名和全部子域名（+.tongji.edu.cn）。校园 DNS：202.120.190.208、202.120.190.108。2026-10-28 已确认 agi.tongji.edu.cn 解析到 10.67.0.251/252，1.tongji.edu.cn 到 192.168.130.211，www.tongji.edu.cn 到 192.168.80.60。
+
+## Canvas 验证
+
+2026-10-28：canvas.tongji.edu.cn 已包含在 +.tongji.edu.cn 校园 DNS 分流和 DOMAIN-SUFFIX,tongji.edu.cn,DIRECT 规则中，无需单独增加规则。校园 DNS 返回 192.168.130.209；HTTPS 请求已到达 Canvas，未登录时返回 HTTP 401。实际登录和课程功能尚未测试。
