@@ -2,6 +2,16 @@ prepend:
 - DOMAIN-SUFFIX,tongji.edu.cn,DIRECT
 - IP-CIDR,10.67.0.251/32,DIRECT,no-resolve
 - IP-CIDR,10.67.0.252/32,DIRECT,no-resolve
+- AND,((NETWORK,UDP),(DOMAIN,browser-intake-datadoghq.com)),REJECT
+- AND,((NETWORK,UDP),(DOMAIN,browser-intake-us5-datadoghq.com)),REJECT
+- AND,((NETWORK,UDP),(DOMAIN,cdn.usefathom.com)),REJECT
+- AND,((NETWORK,UDP),(DOMAIN-SUFFIX,statsigapi.net)),REJECT
+- AND,((NETWORK,UDP),(DOMAIN,accounts.google.com)),REJECT
+- DOMAIN,browser-intake-datadoghq.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN,browser-intake-us5-datadoghq.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN,cdn.usefathom.com,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN-SUFFIX,statsigapi.net,🇯🇵 日本高级 IEPL 专线 1
+- DOMAIN,accounts.google.com,🇯🇵 日本高级 IEPL 专线 1
 - AND,((NETWORK,UDP),(DOMAIN-SUFFIX,anthropic.com)),REJECT
 - AND,((NETWORK,UDP),(DOMAIN-SUFFIX,claude.ai)),REJECT
 - AND,((NETWORK,UDP),(DOMAIN-SUFFIX,claude.com)),REJECT

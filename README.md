@@ -46,3 +46,7 @@
 ## UDP 分流审查（2026-10-29）
 
 当前指定日本节点的运行能力为 udp: false。Mihomo 对不支持 UDP 的目标会继续向下匹配规则，审查中实际发现 api.openai.com 的 UDP 连接落入 DIRECT。已在校园网例外之后、日本目标规则之前添加对应的 UDP REJECT 保护；支持回退的 HTTPS/QUIC 客户端可改用 TCP。此设置会拒绝这些目标的 UDP，依赖纯 UDP 的功能可能不可用；若需要 UDP 语音等功能，应使用并验证支持 UDP 的日本节点再调整保护规则。配置校验通过；检查时 25 条相关活动连接均走指定日本节点，同济域名仍解析到校内地址。
+
+## 浏览器辅助链路（2026-10-29）
+
+为 browser-intake-datadoghq.com、browser-intake-us5-datadoghq.com、cdn.usefathom.com、statsigapi.net 及其子域名、accounts.google.com 增加固定日本出口与 UDP 拒绝回退保护。前四项根据现有订阅的辅助服务规则补充；accounts.google.com 根据当前 Chrome 的实际登录连接补充。这些域名为共享服务，会影响其他网站对同一域名的请求；不表示它们均为回答功能的必要依赖，也未把整个 Chrome 或 Google/Cloudflare 主域强制代理。校园例外仍优先。
