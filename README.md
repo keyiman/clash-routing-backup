@@ -42,3 +42,7 @@
 ## 2026-10-29 依赖域名补充
 
 参考 OpenAI 网络说明 https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps ，补充 oaistatsig、Cloudflare challenge、WorkOS 等 17 条依赖域名规则。配置校验通过，相关旧连接已重建，新建 ChatGPT/Codex/WebSocket 连接已确认走指定日本节点。同济校园 DNS 解析保持正常。GPT-6 回答加载故障尚待用户实际复测，不能据此认定根因已完全消除。
+
+## UDP 分流审查（2026-10-29）
+
+当前指定日本节点的运行能力为 udp: false。Mihomo 对不支持 UDP 的目标会继续向下匹配规则，审查中实际发现 api.openai.com 的 UDP 连接落入 DIRECT。已在校园网例外之后、日本目标规则之前添加对应的 UDP REJECT 保护；支持回退的 HTTPS/QUIC 客户端可改用 TCP。此设置会拒绝这些目标的 UDP，依赖纯 UDP 的功能可能不可用；若需要 UDP 语音等功能，应使用并验证支持 UDP 的日本节点再调整保护规则。配置校验通过；检查时 25 条相关活动连接均走指定日本节点，同济域名仍解析到校内地址。
