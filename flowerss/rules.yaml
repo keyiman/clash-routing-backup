@@ -1,5 +1,6 @@
 prepend:
 - DOMAIN-SUFFIX,tongji.edu.cn,DIRECT
+- DOMAIN-SUFFIX,ctfy.tsinghua.edu.cn,DIRECT
 - IP-CIDR,10.67.0.251/32,DIRECT,no-resolve
 - IP-CIDR,10.67.0.252/32,DIRECT,no-resolve
 - AND,((NETWORK,UDP),(DOMAIN,browser-intake-datadoghq.com)),REJECT

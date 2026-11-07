@@ -50,3 +50,7 @@
 ## 浏览器辅助链路（2026-10-29）
 
 为 browser-intake-datadoghq.com、browser-intake-us5-datadoghq.com、cdn.usefathom.com、statsigapi.net 及其子域名、accounts.google.com 增加固定日本出口与 UDP 拒绝回退保护。前四项根据现有订阅的辅助服务规则补充；accounts.google.com 根据当前 Chrome 的实际登录连接补充。这些域名为共享服务，会影响其他网站对同一域名的请求；不表示它们均为回答功能的必要依赖，也未把整个 Chrome 或 Google/Cloudflare 主域强制代理。校园例外仍优先。
+
+## CTFy 直连（2026-11-07）
+
+ctfy.tsinghua.edu.cn 及其子域名优先 DIRECT，覆盖站点同域的页面、资源和登录 API。其他独立域名需要根据实际使用时发现的地址单独核实。配置校验通过，比赛页面 HTTPS 返回 200。
