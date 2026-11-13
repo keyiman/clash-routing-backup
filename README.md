@@ -54,3 +54,7 @@
 ## CTFy 直连（2026-11-07）
 
 ctfy.tsinghua.edu.cn 及其子域名优先 DIRECT，覆盖站点同域的页面、资源和登录 API。其他独立域名需要根据实际使用时发现的地址单独核实。配置校验通过，比赛页面 HTTPS 返回 200。
+
+## CTFy WireGuard 节点 DNS（2026-11-13）
+
+订阅的脚本增强 flowerss/script.js 保留现有 fake-ip-filter 并增加 +.ctfy.run，配合规则增强将 ctfy.run 直连。恢复时同时导入规则、合并和脚本增强。已验证 node3.tpctf.ctfy.run 在 Windows 和 WSL 返回真实 IPv4，而不是 198.18.x.x。此配置不解决重叠网段的并发冲突、wg-quick 修改的 DNS 残留或比赛节点可用性；连接管理脚本仍须恢复 DNS 并处理旧接口。未测试真实 WireGuard 握手。
