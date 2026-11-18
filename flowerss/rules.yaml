@@ -1,5 +1,7 @@
 prepend:
 - DOMAIN-SUFFIX,tongji.edu.cn,DIRECT
+- DOMAIN-SUFFIX,xuexitong.com,DIRECT
+- DOMAIN-SUFFIX,chaoxing.com,DIRECT
 - DOMAIN-SUFFIX,ctfy.tsinghua.edu.cn,DIRECT
 - DOMAIN-SUFFIX,ctfy.run,DIRECT
 - IP-CIDR,10.67.0.251/32,DIRECT,no-resolve
